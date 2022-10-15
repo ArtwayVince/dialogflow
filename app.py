@@ -2,7 +2,7 @@ import json
 import os
 
 from flask import Flask
-from flask import requests
+from flask import request
 
 app = Flask(__name__)
 
@@ -24,3 +24,5 @@ def calc():
 
 if __name__=='__main__':
     port = int(os.getenv('PORT', 5000))
+    print("running")
+    app.run()
